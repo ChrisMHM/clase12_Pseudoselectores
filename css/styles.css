@@ -1,0 +1,352 @@
+* {
+    /* border: 1px solid black; */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+/* Header */
+.h3__container {
+    background: #1CD1B0;
+    padding: 5px 0;
+    text-align: center;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.h1__container {
+    background: #00669F;
+    box-shadow: 0px 10px 7px 0px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    position: sticky;
+    top: -1px;
+    padding: 1rem 1rem;
+}
+
+.h1__container .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 1rem;
+}
+
+.nav__container {
+    background-color: #001D2D;
+    padding: 5px 1rem;
+    display: flex;
+    box-shadow: 0px 10px 7px 0px rgba(0, 0, 0, 0.25);
+    justify-content: flex-end;
+}
+
+.fa-solid {
+    color: #FFF;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.nav {
+    position: absolute;
+    top: 155.837px;
+    background-color: #001D2D;
+    padding: 25px 50px;
+    z-index: 20;
+    left: -300px;
+    transition: all 0.5s ease-in-out;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.enlaces {
+    color: #F3F3F3;
+}
+
+#menu {
+    display: none;
+}
+
+#menu:checked ~ nav {
+    left: 0;
+}
+
+/* Botón + */
+
+.plus__button {
+    position: fixed;
+    display: flex;
+    right: 1rem;
+    bottom: 2rem;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #00669F;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 5px -1px rgba(71, 71, 71, 0.7);
+
+}
+
+.plus {
+    text-decoration: none;
+    color: #F3F3F3;
+    font-size: 2rem;
+}
+
+/* Cards */
+
+.card__container {
+    display: flex;
+    z-index: 0;
+    box-shadow: 0px 5px 5px -1px rgba(71, 71, 71, 0.5);
+    border-radius: 16px 16px 0 0;
+    background-color: #F3F3F3;
+    margin: 2rem 0;
+    width: 320px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.card__header {
+    position: relative;
+    height: 200px;
+    display: flex;
+    border-radius: 16px 16px 0 0;
+    justify-content: center;
+}
+
+.avatar {
+    position: absolute;
+    width: 120px;
+    border-radius: 50%;
+    bottom: -60px;
+    z-index: 10;
+}
+
+.card__container svg {
+    width: 30px;
+    position: absolute;
+    left: 1rem;
+    padding: 0;
+    z-index: 10;
+}
+
+.card__background {
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 16px 16px 0 0;
+}
+
+.card__main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px 0px;
+    font-size: 14px;
+    height: 290px;
+}
+
+.card__h2 {
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+}
+
+.p__container {
+    height: 160px;
+    margin: 0;
+}
+
+.card__main p {
+    /* padding: 1rem 0; */
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card__footer {
+    padding: 0 0 1rem 0;
+}
+
+.card__footer a {
+    top: 0;
+    text-decoration: none;
+    color: #F3F3F3;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    background: #00669F;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card__harley h2 {
+    text-transform: capitalize;
+}
+
+/* Footer */
+.footer {
+    background: #00669F;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rights {
+    color: #F3F3F3;
+    padding: 1rem 0;
+}
+
+.logo {
+    width: 4rem;
+}
+
+@media (min-width: 750px) {
+
+    .main .container {
+        max-width: 1200px;
+        margin: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    /* header */
+    .h3__container {
+        padding: 0 1rem;
+    }
+
+    .h3__container .container {
+        padding: 5px 0;
+        text-align: left;
+    }
+
+    h3,
+    h1 {
+        width: 100%;
+    }
+
+    .nav__container {
+        justify-content: right;
+        padding: 0 1rem;
+    }
+
+    .hamburger__container {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: right;
+    }
+
+    .nav li:hover,
+    .button:hover,
+    .plus__button:hover {
+        background-color: #1CD1B0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav ul {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .enlaces {
+        text-decoration: none;
+    }
+
+    li a {
+        color: #FFF;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    /* main */
+
+    .main {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card__container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .card__harley {
+        display: block;
+    }
+
+    #heart {
+        display: none;
+    }
+
+    #heart:checked {}
+
+    .footer .container {
+        align-items: center;
+    }
+
+    .plus__button {
+        position: fixed;
+        top: 50%;
+        right: 30px;
+        display: flex;
+    }
+
+    /* Card */
+
+}
